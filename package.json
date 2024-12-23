@@ -1,34 +1,24 @@
 {
-  "name": "@switchbot/homebridge-switchbot",
-  "displayName": "SwitchBot",
+  "name": "@hikuohiku/homebridge-switchbot",
+  "displayName": "SwitchBot Custom",
   "type": "module",
   "version": "4.1.7",
-  "description": "The SwitchBot plugin allows you to access your SwitchBot device(s) from HomeKit.",
-  "author": "SwitchBot <support@wondertechlabs.com> (https://github.com/SwitchBot)",
+  "description": "This is a customized version of the SwitchBot plugin for personal use.",
+  "author": "hikuohiku",
   "contributors": [
     {
-      "name": "Donavan Becker",
-      "url": "https://github.com/donavanbecker"
+      "name": "SwitchBot",
+      "url": "https://github.com/SwitchBot"
     }
   ],
   "license": "ISC",
-  "funding": [
-    {
-      "type": "Paypal",
-      "url": "https://paypal.me/donavanbecker"
-    },
-    {
-      "type": "GitHub",
-      "url": "https://github.com/sponsors/donavanbecker"
-    }
-  ],
-  "homepage": "https://github.com/OpenWonderLabs/homebridge-switchbot#readme",
+  "homepage": "https://github.com/hikuohiku/homebridge-switchbot#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/OpenWonderLabs/homebridge-switchbot.git"
+    "url": "git://github.com/hikuohiku/homebridge-switchbot.git"
   },
   "bugs": {
-    "url": "https://github.com/OpenWonderLabs/homebridge-switchbot/issues"
+    "url": "https://github.com/hikuohiku/homebridge-switchbot/issues"
   },
   "keywords": [
     "homebridge-plugin",
@@ -65,6 +55,7 @@
     "watch": "npm run build && npm run plugin-ui && npm link && nodemon",
     "plugin-ui": "rsync ./src/homebridge-ui/public/index.html ./dist/homebridge-ui/public/",
     "build": "npm run clean && tsc && npm run plugin-ui",
+    "postinstall": "npm run build && npm run plugin-ui",
     "prepublishOnly": "npm run lint && npm run build && npm run plugin-ui && npm run docs && npm run lint-docs",
     "postpublish": "npm run clean && npm ci",
     "clean": "shx rm -rf ./dist",
