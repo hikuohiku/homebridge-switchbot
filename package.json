@@ -55,7 +55,7 @@
     "watch": "npm run build && npm run plugin-ui && npm link && nodemon",
     "plugin-ui": "rsync ./src/homebridge-ui/public/index.html ./dist/homebridge-ui/public/",
     "build": "npm run clean && tsc && npm run plugin-ui",
-    "postinstall": "npm run build && npm run plugin-ui",
+    "postinstall": "npm run build",
     "prepublishOnly": "npm run lint && npm run build && npm run plugin-ui && npm run docs && npm run lint-docs",
     "postpublish": "npm run clean && npm ci",
     "clean": "shx rm -rf ./dist",
