@@ -100,7 +100,7 @@ export class AirConditioner extends irdeviceBase {
     this.HeaterCooler.Service.getCharacteristic(this.hap.Characteristic.HeatingThresholdTemperature).setProps({
       minValue: this.set_min_heat,
       maxValue: this.set_max_heat,
-      minStep: 0.5,
+      minStep: 1,
     }).onGet(async () => {
       return await this.ThresholdTemperatureGet()
     }).onSet(this.ThresholdTemperatureSet.bind(this))
@@ -108,7 +108,7 @@ export class AirConditioner extends irdeviceBase {
     this.HeaterCooler.Service.getCharacteristic(this.hap.Characteristic.CoolingThresholdTemperature).setProps({
       minValue: this.set_min_cool,
       maxValue: this.set_max_cool,
-      minStep: 0.5,
+      minStep: 1,
     }).onGet(async () => {
       return await this.ThresholdTemperatureGet()
     }).onSet(this.ThresholdTemperatureSet.bind(this))
