@@ -1,14 +1,18 @@
 {
-  "name": "@switchbot/homebridge-switchbot",
+  "name": "@hikuohiku/homebridge-switchbot",
   "displayName": "SwitchBot",
   "type": "module",
   "version": "4.3.1",
-  "description": "The SwitchBot plugin allows you to access your SwitchBot device(s) from HomeKit.",
+  "description": "This is a custom fork of @switchbot/homebridge-switchbot.",
   "author": "SwitchBot <support@wondertechlabs.com> (https://github.com/SwitchBot)",
   "contributors": [
     {
       "name": "Donavan Becker",
       "url": "https://github.com/donavanbecker"
+    },
+    {
+      "name": "Hiroki Ando",
+      "url": "https://github.com/hikuohiku"
     }
   ],
   "license": "ISC",
@@ -22,13 +26,13 @@
       "url": "https://github.com/sponsors/donavanbecker"
     }
   ],
-  "homepage": "https://github.com/OpenWonderLabs/homebridge-switchbot#readme",
+  "homepage": "https://github.com/hikuohiku/homebridge-switchbot#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/OpenWonderLabs/homebridge-switchbot.git"
+    "url": "git://github.com/hikuohiku/homebridge-switchbot.git"
   },
   "bugs": {
-    "url": "https://github.com/OpenWonderLabs/homebridge-switchbot/issues"
+    "url": "https://github.com/hikuohiku/homebridge-switchbot/issues"
   },
   "keywords": [
     "homebridge-plugin",
@@ -52,7 +56,7 @@
     "ir"
   ],
   "main": "dist/index.js",
-  "icon": "https://raw.githubusercontent.com/OpenWonderLabs/homebridge-switchbot/latest/branding/icon.png",
+  "icon": "https://raw.githubusercontent.com/hikuohiku/homebridge-switchbot/latest/branding/icon.png",
   "engineStrict": true,
   "engines": {
     "homebridge": "^1.9.0 || ^2.0.0 || ^2.0.0-beta.23 || ^2.0.0-alpha.37",
