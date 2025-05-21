@@ -2,7 +2,7 @@
   "name": "@hikuohiku/homebridge-switchbot",
   "displayName": "SwitchBot",
   "type": "module",
-  "version": "4.3.1",
+  "version": "0.0.0+upstream.4.3.1",
   "description": "This is a custom fork of @switchbot/homebridge-switchbot.",
   "author": "SwitchBot <support@wondertechlabs.com> (https://github.com/SwitchBot)",
   "contributors": [
