@@ -1,3 +1,10 @@
+# @hikuohiku/homebridge-switchbot
+[![npm version](https://badgen.net/npm/v/@hikuohiku/homebridge-switchbot)](https://www.npmjs.com/package/@hikuohiku/homebridge-switchbot)
+
+This is a custom fork of @switchbot/homebridge-switchbot.
+
+----
+
 <span align="center">
 
 <a href="https://github.com/homebridge/verified/blob/master/verified-plugins.json"><img alt="homebridge-verified" src="https://raw.githubusercontent.com/OpenWonderLabs/homebridge-switchbot/latest/branding/Homebridge_x_SwitchBot.svg?sanitize=true" width="350px"></a>
