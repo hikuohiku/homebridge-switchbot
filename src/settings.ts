@@ -260,9 +260,20 @@ export interface irFanConfig extends irBaseDeviceConfig {
   set_min?: number
 };
 
+export interface BrightnessCommand {
+  level: number
+  command: string
+  parameter?: string
+}
+
 export interface irLightConfig extends irBaseDeviceConfig {
   configRemoteType?: 'Light' | 'DIY Light'
   stateless?: boolean
+  supportsBrightness?: boolean
+  brightnessCommands?: BrightnessCommand[]
+  set_minStep?: number
+  set_min?: number
+  set_max?: number
 };
 
 export interface irAirConfig extends irBaseDeviceConfig {
